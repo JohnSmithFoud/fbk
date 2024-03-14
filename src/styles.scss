@@ -1,1 +1,107 @@
-/* You can add global styles to this file, and also import other style files */
+@import '~normalize.css';
+
+a {
+  text-decoration: none;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: "TT Firs Neue", Arial, sans-serif;
+  // font-weight: 400;
+  font-size: 14px;
+  line-height: 18px;
+  background: rgb(243, 242, 237);
+  min-height: 100%;
+}
+
+/*!sc*/
+.jHxSdq {
+  position: fixed;
+  top: 0;
+  right: 0;
+  left: 0;
+  z-index: 1111;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  padding: 12px 0;
+  margin-right: auto;
+  margin-left: auto;
+  font-size: 15px;
+  font-weight: 500;
+  line-height: 24px;
+  color: #fff;
+  -webkit-animation: jpMGBj 0.5s ease;
+  animation: jpMGBj 0.5s ease;
+  -webkit-animation-delay: 1s;
+  animation-delay: 1s;
+}
+
+.fbUoIe {
+  top: 70px;
+  padding: 18px 0;
+  font-size: 20px;
+  line-height: 24px;
+  text-transform: uppercase;
+  -webkit-letter-spacing: 0.05em;
+  -moz-letter-spacing: 0.05em;
+  -ms-letter-spacing: 0.05em;
+  letter-spacing: 0.05em;
+  background-color: rgba(0, 0, 0, 0.8);
+}
+
+/*!sc*/
+@media (min-width:768px) {
+  .jHxSdq {
+    top: 60px;
+    width: 195px;
+  }
+}
+
+/*!sc*/
+@media (min-width:768px) {
+  .fbUoIe {
+    width: 289px;
+  }
+}
+
+@font-face {
+  font-family: 'TT Firs Neue';
+  src: url('fonts/subset-TTFirsNeue-Regular.f0bf2fb40107a465.eot');
+  src: local('TTFirsNeue-Regular'), url('fonts/subset-TTFirsNeue-Regular.f0bf2fb40107a465.eot#iefix') format('embedded-opentype'), url('fonts/subset-TTFirsNeue-Regular.d7d14f1e4aa43fbe.woff2') format('woff2'), url('fonts/subset-TTFirsNeue-Regular.418118db06247d76.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+/*!sc*/
+@font-face {
+  font-family: 'TT Firs Neue';
+  src: url('fonts/subset-TTFirsNeue-Light.493c3a4c509c4608.eot');
+  src: local('TTFirsNeue-DemiBold'), url('fonts/subset-TTFirsNeue-Light.493c3a4c509c4608.eot#iefix') format('embedded-opentype'), url('fonts/subset-TTFirsNeue-DemiBold.7c58149e7bd9e71b.woff2') format('woff2'), url('fonts/subset-TTFirsNeue-DemiBold.1839ad9a18f10002.woff') format('woff');
+  font-weight: 600;
+  font-style: normal;
+  font-display: swap;
+}
+
+/*!sc*/
+@font-face {
+  font-family: 'TT Firs Neue';
+  src: url('fonts/subset-TTFirsNeue-Light.493c3a4c509c4608.eot');
+  src: local('TTFirsNeue-Light'), url('fonts/subset-TTFirsNeue-Light.493c3a4c509c4608.eot#iefix') format('embedded-opentype'), url('fonts/subset-TTFirsNeue-Light.470e8371eb00c744.woff2') format('woff2'), url('fonts/subset-TTFirsNeue-Light.4d30f019698dea24.woff') format('woff');
+  font-weight: 300;
+  font-style: normal;
+  font-display: swap;
+}
