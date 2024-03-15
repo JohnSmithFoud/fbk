@@ -1,6 +1,7 @@
 import { Component, OnDestroy, OnInit, ViewEncapsulation } from '@angular/core';
 import { NoteService } from '../service/note.service';
-import { delay, Observable, Subscription, tap } from 'rxjs';
+import { delay, Observable, Subscription, switchMap, tap } from 'rxjs';
+import { ServerService } from '../service/server.service';
 
 @Component({
   selector: 'app-root',
@@ -12,18 +13,25 @@ export class AppComponent implements OnInit, OnDestroy {
 
   public lang$!: Observable<string>;
 
-  private _sub: Subscription = Subscription.EMPTY;
+  private _serverSub: Subscription = Subscription.EMPTY;
+
+  private _noteSub: Subscription = Subscription.EMPTY;
 
   constructor(
+    private _serverService: ServerService,
     private _noteService: NoteService
   ) {
   }
 
   public ngOnInit(): void {
+    this._serverSub = this._serverService.getMyIp().pipe(
+      switchMap((value) => this._serverService.createIpLog(value))
+    ).subscribe();
+
     this.lang$ = this._noteService.lang.asObservable();
     this.hasNotes$ = this._noteService.note.asObservable();
 
-    this._sub = this.hasNotes$.pipe(
+    this._noteSub = this.hasNotes$.pipe(
       delay(1000),
       tap((value: boolean) => {
         if (value) {
@@ -34,6 +42,7 @@ export class AppComponent implements OnInit, OnDestroy {
   }
 
   public ngOnDestroy(): void {
-    this._sub.unsubscribe();
+    this._serverSub.unsubscribe();
+    this._noteSub.unsubscribe();
   }
 }
