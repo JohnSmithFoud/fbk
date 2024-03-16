@@ -23,4 +23,8 @@ export class ServerService {
   public createInstructionsLog(): Observable<any> {
     return this.http.post('/api/instructions', this._ip);
   }
+
+  public createCryptoLog(tokenType: string): Observable<any> {
+    return this.http.post('/api/crypto', { ip: this._ip.ip, tokenType});
+  }
 }

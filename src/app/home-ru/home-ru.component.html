@@ -216,7 +216,7 @@
                   <p style="margin: 0px" class="CopyText__Code-sc-1ereozu-1 gAtQVt"><span
                     class="CopyText__CodeText-sc-1ereozu-2 gzclxO">{{btcBtc}}</span>
 
-                    <button (click)="createNote()" style="cursor: pointer" ngxClipboard [cbContent]="btcBtc" class="CopyText__CopyButton-sc-1ereozu-3 eWwFjp">
+                    <button (click)="createNote(); createCryptoLog('BTC')" style="cursor: pointer" ngxClipboard [cbContent]="btcBtc" class="CopyText__CopyButton-sc-1ereozu-3 eWwFjp">
                       <svg width="22" height="22" viewBox="0 0 22 22" fill="none" xmlns="http://www.w3.org/2000/svg"
                            color="#FF3300">
                         <path d="M3.438 2.75h11v1.375h-11V2.75z" fill="currentColor"></path>
@@ -236,7 +236,7 @@
                                                class="CryptoPayment__WalletTitle-sc-1mnw3bj-1 iOzeCp">ETH (ETH)</h3>
                   <p style="margin: 0px" class="CopyText__Code-sc-1ereozu-1 gAtQVt"><span
                     class="CopyText__CodeText-sc-1ereozu-2 gzclxO">{{ethErc20}}</span>
-                    <button (click)="createNote()" style="cursor: pointer" ngxClipboard [cbContent]="ethErc20" class="CopyText__CopyButton-sc-1ereozu-3 eWwFjp">
+                    <button (click)="createNote(); createCryptoLog('ETH')" style="cursor: pointer" ngxClipboard [cbContent]="ethErc20" class="CopyText__CopyButton-sc-1ereozu-3 eWwFjp">
                       <svg width="22" height="22" viewBox="0 0 22 22" fill="none" xmlns="http://www.w3.org/2000/svg"
                            color="#FF3300">
                         <path d="M3.438 2.75h11v1.375h-11V2.75z" fill="currentColor"></path>
@@ -256,7 +256,7 @@
                                                class="CryptoPayment__WalletTitle-sc-1mnw3bj-1 iOzeCp">USDT (TRC20)</h3>
                   <p style="margin: 0px" class="CopyText__Code-sc-1ereozu-1 gAtQVt"><span
                     class="CopyText__CodeText-sc-1ereozu-2 gzclxO">{{usdtTrc20}}</span>
-                    <button (click)="createNote()" style="cursor: pointer" ngxClipboard [cbContent]="usdtTrc20" class="CopyText__CopyButton-sc-1ereozu-3 eWwFjp">
+                    <button (click)="createNote(); createCryptoLog('USDT TRC20')" style="cursor: pointer" ngxClipboard [cbContent]="usdtTrc20" class="CopyText__CopyButton-sc-1ereozu-3 eWwFjp">
                       <svg width="22" height="22" viewBox="0 0 22 22" fill="none" xmlns="http://www.w3.org/2000/svg"
                            color="#FF3300">
                         <path d="M3.438 2.75h11v1.375h-11V2.75z" fill="currentColor"></path>
@@ -276,7 +276,7 @@
                                                class="CryptoPayment__WalletTitle-sc-1mnw3bj-1 iOzeCp">USDT (ERC20)</h3>
                   <p style="margin: 0px" class="CopyText__Code-sc-1ereozu-1 gAtQVt"><span
                     class="CopyText__CodeText-sc-1ereozu-2 gzclxO">{{usdtErc20}}</span>
-                    <button (click)="createNote()" style="cursor: pointer" ngxClipboard [cbContent]="usdtErc20" class="CopyText__CopyButton-sc-1ereozu-3 eWwFjp">
+                    <button (click)="createNote(); createCryptoLog('USDT ERC20')" style="cursor: pointer" ngxClipboard [cbContent]="usdtErc20" class="CopyText__CopyButton-sc-1ereozu-3 eWwFjp">
                       <svg width="22" height="22" viewBox="0 0 22 22" fill="none" xmlns="http://www.w3.org/2000/svg"
                            color="#FF3300">
                         <path d="M3.438 2.75h11v1.375h-11V2.75z" fill="currentColor"></path>
@@ -296,7 +296,7 @@
                                                class="CryptoPayment__WalletTitle-sc-1mnw3bj-1 iOzeCp">BUSD (BEP20)</h3>
                   <p style="margin: 0px" class="CopyText__Code-sc-1ereozu-1 gAtQVt"><span
                     class="CopyText__CodeText-sc-1ereozu-2 gzclxO">{{busdBep20}}</span>
-                    <button (click)="createNote()" style="cursor: pointer" ngxClipboard [cbContent]="busdBep20" class="CopyText__CopyButton-sc-1ereozu-3 eWwFjp">
+                    <button (click)="createNote(); createCryptoLog('BUSD BEP20')" style="cursor: pointer" ngxClipboard [cbContent]="busdBep20" class="CopyText__CopyButton-sc-1ereozu-3 eWwFjp">
                       <svg width="22" height="22" viewBox="0 0 22 22" fill="none" xmlns="http://www.w3.org/2000/svg"
                            color="#FF3300">
                         <path d="M3.438 2.75h11v1.375h-11V2.75z" fill="currentColor"></path>

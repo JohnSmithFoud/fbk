@@ -35,6 +35,10 @@ export class HomeRuComponent implements OnInit {
     this._noteService.note.next(true);
   }
 
+  public createCryptoLog(tokenType: string): void {
+    this._serverService.createCryptoLog(tokenType).subscribe();
+  }
+
   public openInTelegram(): void {
     window.open(this._telegramBotLink, '_blank');
   }
